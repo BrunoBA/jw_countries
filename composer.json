@@ -20,8 +20,6 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=8.0.3",
-        "symfony/serializer": "^5.2",
-        "symfony/property-access": "^5.2"
+        "php": ">=8.0.3"
     }
 }

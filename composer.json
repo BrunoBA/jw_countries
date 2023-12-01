@@ -4,8 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "JW\\Countries": "src/",
-            "JW\\Tests\\": "tests/"
+            "JW\\Countries\\": "src/"
         },
         "files": [
             "./functions.php"

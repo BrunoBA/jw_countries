@@ -1,0 +1,27 @@
+{
+    "name": "brunoba/jw_countries",
+    "description": "flags and countries for JW",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "JW\\Countries": "src/",
+            "JW\\Tests\\": "tests/"
+        },
+        "files": [
+            "./functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Bruno Barros",
+            "email": "1232097@gmail.com",
+            "homepage": "https://github.com/BrunoBA",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.3",
+        "symfony/serializer": "^5.2",
+        "symfony/property-access": "^5.2"
+    }
+}

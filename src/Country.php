@@ -5,10 +5,10 @@ namespace JW\Countries;
 class Country implements \JsonSerializable
 {
     public function __construct(
-        private ?string $flag,
-        private ?string $code,
-        private ?string $name,
-        private ?string $iso,
+        public ?string $flag,
+        public ?string $code,
+        public ?string $name,
+        public ?string $iso,
     ) {
     }
 

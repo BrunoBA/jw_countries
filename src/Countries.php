@@ -14,7 +14,7 @@ class Countries
 
     private function init(): void
     {
-        $countries = loadFromJSON();
+        $countries = loadCountries();
         foreach ($countries as $country) {
             $this->countries[] = new Country(
                 $country->flag,
@@ -25,7 +25,7 @@ class Countries
         }
     }
 
-    public function getByCode(string $code): Country
+    public function getByCode(string $code): ?Country
     {
         $countries = $this->countries;
 
@@ -35,7 +35,28 @@ class Countries
             }
         }
 
-        return $this->defaultLocale();
+        return null;
+    }
+
+    public function getByIso(string $iso): ?Country
+    {
+        $countries = $this->countries;
+
+        foreach ($countries as $country) {
+            if ($country->iso == $iso) {
+                return $country;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return Country[]|array
+     */
+    public function getAll(): array
+    {
+        return array_merge($this->countries, []);
     }
 
     private function defaultLocale(): Country

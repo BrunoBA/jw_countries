@@ -1,0 +1,1 @@
+{"version":1,"defects":{"JW\\Countries\\Test\\CountriesTest::checkIfTheIsoCodesAreUnique":7},"times":{"JW\\Countries\\Test\\CountriesTest::checkIfHas723Countries":0.007,"JW\\Countries\\Test\\CountriesTest::checkIfTheIsoCodesAreUnique":0.002,"JW\\Countries\\Test\\CountriesTest::checkIfTheIsoAreUnique":0.001,"JW\\Countries\\Test\\CountriesTest::checkIfTheCodesAreUnique":0}}
